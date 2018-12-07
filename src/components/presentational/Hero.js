@@ -15,7 +15,7 @@ const StyledHeader = styled.header`
 	clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 	position: relative;
 `;
-class Header extends Component {
+class Hero extends Component {
 	render() {
 		return (
 			<StyledHeader>
@@ -26,4 +26,4 @@ class Header extends Component {
 	}
 }
 
-export default Header;
+export default Hero;

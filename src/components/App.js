@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import Header from "./presentational/Header";
+import Hero from "./presentational/Hero";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
@@ -18,10 +18,13 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 class App extends Component {
+	componentDidMount = () => {
+		document.title = "Natours - Where life happens";
+	};
 	render() {
 		return (
 			<Fragment>
-				<Header className="App-header" />
+				<Hero className="App-header" />
 				<GlobalStyle />
 			</Fragment>
 		);

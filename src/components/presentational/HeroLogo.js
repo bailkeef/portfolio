@@ -12,7 +12,7 @@ class HeroLogo extends Component {
 	render() {
 		return (
 			<div className="hero__logo-box">
-				<img src={this.props.src} className="hero__logo" />
+				<img src={this.props.src} className="hero__logo" alt="Logo"/>
 			</div>
 		);
 	}

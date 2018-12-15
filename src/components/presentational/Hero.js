@@ -5,10 +5,12 @@ import HeaderLogo from "./HeroLogo";
 class Hero extends Component {
 	render() {
 		return (
-			<header className="hero">
-				<HeaderLogo />
-				<HeroTextBox main="Outdoors" sub="Is where life happens" />
-			</header>
+			<div>
+				<header className="hero">
+					<HeaderLogo />
+					<HeroTextBox main="Outdoors" sub="Is where life happens" />
+				</header>
+			</div>
 		);
 	}
 }

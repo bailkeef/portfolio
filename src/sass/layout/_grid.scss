@@ -1,3 +1,71 @@
-.__grid__row {
-	max-width: 114rem;
+.grid {
+	&__row {
+		background-color: #eee;
+		margin: 0 auto;
+		max-width: $grid-width;
+
+		&:not(:last-child) {
+			margin-bottom: $gutter-vertical;
+		}
+
+        @include clearfix;
+        
+		[class^="grid__row__col--"] {
+			background-color: orangered;
+			float: left;
+			&:not(:last-child) {
+				margin-right: $gutter-horizontal;
+			}
+		}
+
+		&__col {
+			&--1 {
+				@include get-column-width(1, 12);
+			}
+
+			&--2 {
+				@include get-column-width(2, 12);
+			}
+
+			&--3 {
+				@include get-column-width(3, 12);
+			}
+
+			&--4 {
+				@include get-column-width(4, 12);
+			}
+
+			&--5 {
+				@include get-column-width(5, 12);
+			}
+
+			&--6 {
+				@include get-column-width(6, 12);
+			}
+
+			&--7 {
+				@include get-column-width(7, 12);
+			}
+
+			&--8 {
+				@include get-column-width(8, 12);
+			}
+
+			&--9 {
+				@include get-column-width(9, 12);
+			}
+
+			&--10 {
+				@include get-column-width(10, 12);
+			}
+
+			&--11 {
+				@include get-column-width(11, 12);
+			}
+
+			&--12 {
+				@include get-column-width(12, 12);
+			}
+		}
+	}
 }

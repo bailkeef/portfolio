@@ -1,0 +1,14 @@
+@mixin clearfix {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin get-column-width($size, $parent-size) {
+	$element-width: 100% * $size;
+	$gutter-total: $gutter-horizontal * ($parent-size - $size);
+	$width: calc((calc(#{$element-width} - #{$gutter-total})) / #{$parent-size});
+	width: $width;
+}

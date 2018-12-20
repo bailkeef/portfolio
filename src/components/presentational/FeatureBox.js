@@ -10,14 +10,14 @@ const variantClasses = {
 
 class FeatureBox extends Component {
 	getVariant = () => {
-		const { className, variant, children, iconName } = this.props;
+		const { className, variant, children, iconName, title } = this.props;
 		let classes = className
 			? `${className} ${variantClasses[variant]}`
 			: variantClasses[variant];
 		return (
 			<Card className={classes}>
 				<FontIcon className="feature-box__icon" type={iconName} />
-				<Typography variant="h3">Live a Healthier Life</Typography>
+				<Typography variant="h3">{title}</Typography>
 				<Typography variant="p" className="feature-box__text">
 					{children}
 				</Typography>

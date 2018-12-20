@@ -6,6 +6,7 @@ import GridColumn from "../GridColumn";
 import Typography from "../Typography";
 import Button from "../Button";
 import FontIcon from "../FontIcon";
+import FeatureBox from "../FeatureBox";
 class Main extends Component {
 	componentDidMount = () => {
 		document.title = "Natours - Where life happens";
@@ -71,53 +72,31 @@ class Main extends Component {
 						<Grid>
 							<GridRow>
 								<GridColumn size={3}>
-									<div className="feature-box">
-										<FontIcon
-											className="feature-box__icon"
-											type="basic-world"
-										/>
-										<Typography variant="h3">Explore the world</Typography>
-										<Typography variant="p" className="feature-box__text">
-											Occaecat magna aliquip ea incididunt est eiusmod et
-											ullamco reprehenderit exercitation officia.
-										</Typography>
-									</div>
+									<FeatureBox title="Explore the world" iconName="basic-world">
+										Occaecat magna aliquip ea incididunt est eiusmod et ullamco
+										reprehenderit exercitation officia.
+									</FeatureBox>
 								</GridColumn>
 								<GridColumn size={3}>
-									<div className="feature-box">
-										<FontIcon
-											className="feature-box__icon"
-											type="basic-compass"
-										/>
-										<Typography variant="h3">Meet Nature</Typography>
-										<Typography variant="p" className="feature-box__text">
-											Occaecat magna aliquip ea incididunt est eiusmod et
-											ullamco reprehenderit exercitation officia.
-										</Typography>
-									</div>
+									<FeatureBox title="Meet nature" iconName="basic-compass">
+										Occaecat magna aliquip ea incididunt est eiusmod et ullamco
+										reprehenderit exercitation officia.
+									</FeatureBox>
 								</GridColumn>
 								<GridColumn size={3}>
-									<div className="feature-box">
-										<FontIcon className="feature-box__icon" type="basic-map" />
-										<Typography variant="h3">Find Your Way</Typography>
-										<Typography variant="p" className="feature-box__text">
-											Occaecat magna aliquip ea incididunt est eiusmod et
-											ullamco reprehenderit exercitation officia.
-										</Typography>
-									</div>
+									<FeatureBox title="Find your way" iconName="basic-map">
+										Occaecat magna aliquip ea incididunt est eiusmod et ullamco
+										reprehenderit exercitation officia.
+									</FeatureBox>
 								</GridColumn>
 								<GridColumn size={3}>
-									<div className="feature-box">
-										<FontIcon
-											className="feature-box__icon"
-											type="basic-heart"
-										/>
-										<Typography variant="h3">Live a Healthier Life</Typography>
-										<Typography variant="p" className="feature-box__text">
-											Occaecat magna aliquip ea incididunt est eiusmod et
-											ullamco reprehenderit exercitation officia.
-										</Typography>
-									</div>
+									<FeatureBox
+										title="Live a healthier life"
+										iconName="basic-heart"
+									>
+										Occaecat magna aliquip ea incididunt est eiusmod et ullamco
+										reprehenderit exercitation officia.
+									</FeatureBox>
 								</GridColumn>
 							</GridRow>
 						</Grid>

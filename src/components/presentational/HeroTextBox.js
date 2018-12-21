@@ -13,7 +13,7 @@ class HeroTextBox extends Component {
 					<span className="heading-primary--main">{this.props.main || ""}</span>
 					<span className="heading-primary--sub">{this.props.sub || ""}</span>
 				</h1>
-				<Button animated popUpAnimation />
+				<Button variant="cool" color="white" animated popUpAnimation>Discover our tours</Button>
 			</div>
 		);
 	}

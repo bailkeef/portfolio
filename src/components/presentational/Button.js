@@ -1,16 +1,19 @@
 import React, { Component } from "react";
 
-const variantClasses = {
-	text: "btn-text",
-	cool: "btn btn--white btn--animated"
+const getClass = (type, color = "white") => {
+	const variantClasses = {
+		text: "btn-text",
+		cool: `btn btn--${color} btn--animated`
+	};
+	return variantClasses[type];
 };
 
 class Button extends Component {
 	getVariant = () => {
-		const { className, variant, href, children } = this.props;
+		const { className, variant, href, children, color } = this.props;
 		let classes = className
-			? `${className} ${variantClasses[variant]}`
-			: variantClasses[variant];
+			? `${className} ${getClass(variant, color)}`
+			: getClass(variant, color);
 		return (
 			<a href={href || "#"} className={classes}>
 				{children}

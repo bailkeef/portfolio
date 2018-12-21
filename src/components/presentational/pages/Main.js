@@ -5,8 +5,8 @@ import GridRow from "../GridRow";
 import GridColumn from "../GridColumn";
 import Typography from "../Typography";
 import Button from "../Button";
-import FontIcon from "../FontIcon";
 import FeatureBox from "../FeatureBox";
+import TourFlipCard from "../TourFlipCard";
 class Main extends Component {
 	componentDidMount = () => {
 		document.title = "Natours - Where life happens";
@@ -100,6 +100,66 @@ class Main extends Component {
 								</GridColumn>
 							</GridRow>
 						</Grid>
+					</section>
+					<section className="section-tours">
+						<div className="u-center-text u-margin-bottom--big">
+							<h2 className="heading-secondary">Most popular tours</h2>
+						</div>
+						<Grid>
+							<GridRow>
+								<GridColumn size={4}>
+									<TourFlipCard
+										typeIndex="2"
+										price="297"
+										title="The sea explorer"
+										description={[
+											"3 day tours",
+											"Up to 30 people",
+											"2 tour guides",
+											"Sleep in cozy hotels",
+											"Difficulty: easy"
+										]}
+									/>
+								</GridColumn>
+								<GridColumn size={4}>
+									<TourFlipCard
+										typeIndex="1"
+										price="497"
+										title="The forest hiker"
+										description={[
+											"7 day tours",
+											"Up to 40 people",
+											"6 tour guides",
+											"Sleep in provided tents",
+											"Difficulty: medium"
+										]}
+									/>
+								</GridColumn>
+								<GridColumn size={4}>
+									<TourFlipCard
+										typeIndex="3"
+										price="897"
+										title="The now adventurer"
+										description={[
+											"5 day tours",
+											"Up to 15 people",
+											"3 tour guides",
+											"Sleep in provided tents",
+											"Difficulty: hard"
+										]}
+									/>
+								</GridColumn>
+							</GridRow>
+						</Grid>
+						<div className="u-center-text">
+							<Button
+								variant="cool"
+								color="green"
+								className="u-margin-top--big"
+							>
+								Discover all tours
+							</Button>
+						</div>
 					</section>
 				</main>
 			</Fragment>

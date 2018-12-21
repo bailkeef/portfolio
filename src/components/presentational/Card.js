@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 
-const variantClasses = {
-	text: "btn-text",
-	cool: "btn btn--white btn--animated"
-};
 
 class Card extends Component {
 	getVariant = () => {

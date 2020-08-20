@@ -3,7 +3,7 @@ import Main from "./presentational/pages/Main";
 
 class App extends Component {
 	componentDidMount = () => {
-		document.title = "Natours - Where life happens";
+		document.title = "Bailey Nicole Keefer";
 	};
 	render() {
 		return <Main />;

@@ -6,15 +6,19 @@ class HeroTextBox extends Component {
 		main: PropTypes.string,
 		sub: PropTypes.string
 	};
+	static defaultProps = {
+		src: "/img/bailey-1.png",
+	};
 	render() {
 		return (
 			<div className="hero__text-box">
 				<h1 className="heading-primary">
 					<span className="heading-primary--main">{this.props.main || ""}</span>
 					<span className="heading-primary--sub">{this.props.sub || ""}</span>
+					<Button variant="cool" color="white" animated popUpAnimation>View My Projects</Button>
 				</h1>
-				<Button variant="cool" color="white" animated popUpAnimation>Discover our tours</Button>
-			</div>
+				<img src={this.props.src} className="hero__profile-pic"/>
+		</div>
 		);
 	}
 }

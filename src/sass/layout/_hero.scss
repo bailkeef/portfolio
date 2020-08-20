@@ -1,15 +1,15 @@
 .hero {
-	height: 96vh;
+	height: 93vh;
 	background-image: linear-gradient(
 			to right bottom,
 			rgba($color-primary-light, 0.8),
 			rgba($color-primary-dark, 0.8)
 		),
-		url(/img/hero.jpg);
+		url(/img/tokyo-1.gif);
 	background-size: cover;
 	background-position: top;
 	position: relative;
-	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
 
 	&__logo-box {
 		position: absolute;
@@ -18,14 +18,23 @@
 	}
 
 	&__logo {
-		height: 3.5rem;
+		height: 5rem;
 	}
 
 	&__text-box {
 		position: absolute;
+		display: flex;
 		top: 40%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		text-align: center;
+		justify-content: center;
+	}
+
+	&__profile-pic {
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
+		transform: translate(20%, 0%);
 	}
 }

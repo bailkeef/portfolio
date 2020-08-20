@@ -7,7 +7,7 @@ class HeroLogo extends Component {
 		height: PropTypes.string
 	};
 	static defaultProps = {
-		src: "/img/logo-white.png",
+		src: "/img/favicon.png",
 	};
 	render() {
 		return (

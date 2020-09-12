@@ -15,7 +15,7 @@ class HeroTextBox extends Component {
 				<h1 className="heading-primary">
 					<span className="heading-primary--main">{this.props.main || ""}</span>
 					<span className="heading-primary--sub">{this.props.sub || ""}</span>
-					<Button variant="cool" color="white" animated popUpAnimation>View My Projects</Button>
+					<Button className="btn--animated" variant="cool" color="white" animated popUpAnimation href="#projects">View My Projects</Button>
 				</h1>
 				<img src={this.props.src} className="hero__profile-pic"/>
 		</div>

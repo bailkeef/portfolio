@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class TourFlipCard extends Component {
+export default class ProjectFlipCard extends Component {
 	render() {
 		const { className, children } = this.props;
 		let classes = className ? `${className} flip-card` : "flip-card";

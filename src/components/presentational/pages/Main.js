@@ -6,7 +6,7 @@ import GridColumn from "../GridColumn";
 import Typography from "../Typography";
 import Button from "../Button";
 import FeatureBox from "../FeatureBox";
-import TourFlipCard from "../TourFlipCard";
+import ProjectFlipCard from "../ProjectFlipCard";
 class Main extends Component {
 	componentDidMount = () => {
 		document.title = "Bailey Nicole Keefer";
@@ -21,6 +21,9 @@ class Main extends Component {
 							<Typography variant="h2" className="u-margin-bottom--small">
 								Full Stack Software Engineer
 							</Typography>
+							<Typography variant="h3" className="u-margin-bottom--small">
+								University of Michigan Alum
+							</Typography>
 						</div>
 						<Grid>
 							<GridRow>
@@ -29,17 +32,14 @@ class Main extends Component {
 										Creative Problem Solver
 									</Typography>
 									<Typography variant="p">
-										I am a continuous learner who is always looking for new ways to solve problems an produce results.
+										With a background in Aerospace Engineering, I bring unique perspectives when coming up with solutions to complex problems.
 									</Typography>
 									<Typography variant="h3" className="u-margin-bottom--small">
 										Collaborative Team Member
 									</Typography>
 									<Typography variant="p">
-										I have worked on many engineering teams, led a team of engineers, and understand that communication is the driving force of productivity.
+										I believe that efficient communication can accelerate progress on a project level and individual level. I love working on teams so I can learn from experiences of others and provide my own insight as well.
 									</Typography>
-									<Button href="#" variant="text">
-										Learn more &rarr;
-									</Button>
 								</GridColumn>
 								<GridColumn size={6}>
 									<div className="composition">
@@ -68,24 +68,29 @@ class Main extends Component {
 							<GridRow>
 								<GridColumn size={3}>
 									<FeatureBox title="FRONT END" iconName="basic-world">
-										JavaScript
-										HTML
-										CSS
-										React
-										Redux
+										<ul>
+											<li>Redux</li>
+											<li>React</li>
+											<li>JavaScript ES6</li>
+											<li>HTML/CSS</li>
+										</ul>
 									</FeatureBox>
 								</GridColumn>
 								<GridColumn size={3}>
 									<FeatureBox title="SERVER" iconName="basic-compass">
-										Node.js
-										Express
+										<ul>
+											<li>Node.js</li>
+											<li>Express</li>
+										</ul>
 									</FeatureBox>
 								</GridColumn>
 								<GridColumn size={3}>
 									<FeatureBox title="DATABASE" iconName="basic-map">
-										PostgreSQL
-										MySQL
-										MongoDB
+										<ul>
+											<li>PostgreSQL</li>
+											<li>MySQL</li>
+											<li>MongoDB</li>
+										</ul>
 									</FeatureBox>
 								</GridColumn>
 								<GridColumn size={3}>
@@ -93,12 +98,12 @@ class Main extends Component {
 										title="OTHER"
 										iconName="basic-heart"
 									>
-										Heroku
-										Git
-										GitHub
-										d3.js
-										Stripe API
-										Plaid API
+										<ul>
+											<li>REST API</li>
+											<li>Heroku</li>
+											<li>Git</li>
+											<li>GitHub</li>
+										</ul>
 									</FeatureBox>
 								</GridColumn>
 							</GridRow>
@@ -106,62 +111,96 @@ class Main extends Component {
 					</section>
 					<section className="section-tours">
 						<div className="u-center-text u-margin-bottom--big">
-							<h2 className="heading-secondary">Technical Projects</h2>
+							<h2 className="heading-secondary" id="projects">Technical Projects</h2>
 						</div>
 						<Grid>
 							<GridRow>
 								<GridColumn size={4}>
-									<TourFlipCard
+									<ProjectFlipCard
 										typeIndex="2"
-										price="297"
-										title="The sea explorer"
+										projectDescription="Customizable financial web application with bank integration and data visualization"
+										title="Custom Finance App"
 										description={[
-											"3 day tours",
-											"Up to 30 people",
-											"2 tour guides",
-											"Sleep in cozy hotels",
-											"Difficulty: easy"
+											"React | Redux",
+											"Node.js | Express",
+											"PostgreSQL",
+											"d3.js",
+											"Plaid API"
 										]}
 									/>
 								</GridColumn>
 								<GridColumn size={4}>
-									<TourFlipCard
+									<ProjectFlipCard
 										typeIndex="1"
-										price="497"
-										title="The forest hiker"
+										projectDescription="Web scrapes for For-Sale-By-Owner leads' phone numbers for real estate agents and mass texts the messages"
+										title="RE Lead Generator"
 										description={[
-											"7 day tours",
-											"Up to 40 people",
-											"6 tour guides",
-											"Sleep in provided tents",
-											"Difficulty: medium"
+											"React",
+											"Node.js",
+											"Express",
+											"Puppeteer.js",
+											"PostgreSQL"
 										]}
 									/>
 								</GridColumn>
 								<GridColumn size={4}>
-									<TourFlipCard
+									<ProjectFlipCard
 										typeIndex="3"
-										price="897"
-										title="The now adventurer"
+										projectDescription="E-commerce website for selling puzzles that allows for customer and store admin user experiences"
+										title="Puzzle Party"
 										description={[
-											"5 day tours",
-											"Up to 15 people",
-											"3 tour guides",
-											"Sleep in provided tents",
-											"Difficulty: hard"
+											"React | Redux",
+											"Node.js",
+											"Express",
+											"PostgreSQL",
+											"Stripe API"
+										]}
+									/>
+								</GridColumn>
+							</GridRow>
+							<GridRow>
+								<GridColumn size={4}>
+									<ProjectFlipCard
+										typeIndex="4"
+										projectDescription="The site that you are currently on!"
+										title="Bailey's Portfolio"
+										description={[
+											"React",
+											"HTML",
+											"CSS",
+											"Sass",
+
+										]}
+									/>
+								</GridColumn>
+								<GridColumn size={4}>
+									<ProjectFlipCard
+										typeIndex="5"
+										projectDescription="Allows real estate investors to connect and list and buy deals. Users are able to see reviews for investors to make sure they are trustworthy"
+										title="Deal Huntz"
+										description={[
+											"React",
+											"Node.js",
+											"Express",
+											"PostgreSQL"
+										]}
+									/>
+								</GridColumn>
+								<GridColumn size={4}>
+									<ProjectFlipCard
+										typeIndex="6"
+										projectDescription="E-commerce website for selling puzzles that allows for customer and store admin user experiences"
+										title="Cocktail Roulette"
+										description={[
+											"React | Redux",
+											"Cocktail DB API",
+											"Express"
 										]}
 									/>
 								</GridColumn>
 							</GridRow>
 						</Grid>
 						<div className="u-center-text">
-							<Button
-								variant="cool"
-								color="green"
-								className="u-margin-top--big"
-							>
-								Discover all tours
-							</Button>
 						</div>
 					</section>
 				</main>

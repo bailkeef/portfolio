@@ -21,6 +21,7 @@ class Main extends Component {
 	handleShow(id){
 		console.log('inside of handleShow')
 		this.setState({show: id});
+		console.log(this.state)
 	}
 
 	handleClose(){
@@ -127,10 +128,10 @@ class Main extends Component {
 						</Grid>
 					</section>
 					<section className="section-tours">
-						{this.state.show ? <Popup showId={this.state.show}/> : null}
 						<div className="u-center-text u-margin-bottom--big">
 							<h2 className="heading-secondary" id="projects">Technical Projects</h2>
 						</div>
+						{this.state.show ? <Popup showId={this.state.show} handleClose={this.handleClose}/> :
 						<Grid>
 							<GridRow>
 								<GridColumn size={4}>
@@ -161,6 +162,7 @@ class Main extends Component {
 											"PostgreSQL"
 										]}
 										handleShow={this.handleShow}
+										handleClose={this.handleClose}
 									/>
 								</GridColumn>
 								<GridColumn size={4}>
@@ -176,6 +178,7 @@ class Main extends Component {
 											"Stripe API"
 										]}
 										handleShow={this.handleShow}
+										handleClose={this.handleClose}
 									/>
 								</GridColumn>
 							</GridRow>
@@ -192,6 +195,7 @@ class Main extends Component {
 											"Sass",
 										]}
 										handleShow={this.handleShow}
+										handleClose={this.handleClose}
 									/>
 								</GridColumn>
 								<GridColumn size={4}>
@@ -206,6 +210,7 @@ class Main extends Component {
 											"PostgreSQL"
 										]}
 										handleShow={this.handleShow}
+										handleClose={this.handleClose}
 									/>
 								</GridColumn>
 								<GridColumn size={4}>
@@ -219,10 +224,11 @@ class Main extends Component {
 											"Express"
 										]}
 										handleShow={this.handleShow}
+										handleClose={this.handleClose}
 									/>
 								</GridColumn>
 							</GridRow>
-						</Grid>
+						</Grid>}
 						<div className="u-center-text">
 						</div>
 					</section>

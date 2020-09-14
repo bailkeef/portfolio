@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 
 export default class PopUp extends Component {
-  handleClick = () => {
-    this.props.toggle();
-  };
 
   render() {
+    console.log(this.props, 'props of the popup')
     return (
       <div className="popup--container">
         <div className="popup--img">
-          <span className="close" onClick={this.handleClick}>
+          <span className="close" onClick={this.props.handleClose}>
             &times;
           </span>
           <form>

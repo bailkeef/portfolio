@@ -16,15 +16,12 @@ export default class ProjectFlipCard extends Component {
     this.setState({
       seen: !this.state.seen
 		});
-		console.log(this.state, 'after state')
 	};
 
 	render() {
 		const { className, title, projectDescription, typeIndex, description } = this.props;
-		console.log(this.props.handleShow, 'handleshow')
 		return (
 			<div>
-			{this.state.seen ? <Popup toggle={this.togglePop} /> : null}
 				<FlipCard className={className}>
 					<FlipCardFront>
 						<div
@@ -50,7 +47,7 @@ export default class ProjectFlipCard extends Component {
 							<div className="flip-card__price-box">
 								<p className="flip-card__price-value">{`${projectDescription}`}</p>
 							</div>
-							<button variant="cool" onClick={this.props.handleShow}>Demo</button>
+							<button variant="cool" onClick={()=>this.props.handleShow(Number(this.props.typeIndex))}>Demo</button>
 						</div>
 					</FlipCardBack>
 				</FlipCard>

@@ -1,39 +1,60 @@
 import React, { Component } from "react";
 import FlipCard, { FlipCardBack, FlipCardFront } from "./FlipCard";
 import Button from "./Button";
+import Popup from "./Popup";
+
 export default class ProjectFlipCard extends Component {
+	constructor(props){
+		super();
+		this.state = {
+			seen: false
+		}
+	}
+
+	togglePop = () => {
+		console.log('togglePop clicked')
+    this.setState({
+      seen: !this.state.seen
+		});
+		console.log(this.state, 'after state')
+	};
+
 	render() {
 		const { className, title, projectDescription, typeIndex, description } = this.props;
+		console.log(this.props.handleShow, 'handleshow')
 		return (
-			<FlipCard className={className}>
-				<FlipCardFront>
-					<div
-						className={`flip-card__picture flip-card__picture--${typeIndex}`}
-					/>
-					<h4 className="flip-card__header">
-						<span
-							className={`flip-card__header-span flip-card__header-span--${typeIndex}`}
-						>
-							{title}
-						</span>
-					</h4>
-					<div className="flip-card__details">
-						<ul>
-							{description.map((desc, index) => {
-								return <li key={index}>{desc}</li>;
-							})}
-						</ul>
-					</div>
-				</FlipCardFront>
-				<FlipCardBack>
-					<div className="flip-card__cta">
-						<div className="flip-card__price-box">
-							<p className="flip-card__price-value">{`${projectDescription}`}</p>
+			<div>
+			{this.state.seen ? <Popup toggle={this.togglePop} /> : null}
+				<FlipCard className={className}>
+					<FlipCardFront>
+						<div
+							className={`flip-card__picture flip-card__picture--${typeIndex}`}
+						/>
+						<h4 className="flip-card__header">
+							<span
+								className={`flip-card__header-span flip-card__header-span--${typeIndex}`}
+							>
+								{title}
+							</span>
+						</h4>
+						<div className="flip-card__details">
+							<ul>
+								{description.map((desc, index) => {
+									return <li key={index}>{desc}</li>;
+								})}
+							</ul>
 						</div>
-						<Button variant="cool" href="#projects">Demo</Button>
-					</div>
-				</FlipCardBack>
-			</FlipCard>
+					</FlipCardFront>
+					<FlipCardBack>
+						<div className="flip-card__cta">
+							<div className="flip-card__price-box">
+								<p className="flip-card__price-value">{`${projectDescription}`}</p>
+							</div>
+							<button variant="cool" onClick={this.props.handleShow}>Demo</button>
+						</div>
+					</FlipCardBack>
+				</FlipCard>
+			</div>
 		);
 	}
 }

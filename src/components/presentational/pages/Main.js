@@ -7,10 +7,30 @@ import Typography from "../Typography";
 import Button from "../Button";
 import FeatureBox from "../FeatureBox";
 import ProjectFlipCard from "../ProjectFlipCard";
+import Popup from "../Popup";
 class Main extends Component {
+	constructor(){
+		super();
+		this.state = {
+			show: null,
+		}
+		this.handleShow = this.handleShow.bind(this);
+    this.handleClose = this.handleClose.bind(this);
+	}
+
+	handleShow(id){
+		console.log('inside of handleShow')
+		this.setState({show: id});
+	}
+
+	handleClose(){
+		this.setState({show: null});
+	}
+
 	componentDidMount = () => {
 		document.title = "Bailey Nicole Keefer";
 	};
+
 	render() {
 		return (
 			<Fragment>
@@ -20,9 +40,6 @@ class Main extends Component {
 						<div className="u-center-text u-margin-bottom--big">
 							<Typography variant="h2" className="u-margin-bottom--small">
 								Full Stack Software Engineer
-							</Typography>
-							<Typography variant="h3" className="u-margin-bottom--small">
-								University of Michigan Alum
 							</Typography>
 						</div>
 						<Grid>
@@ -110,6 +127,7 @@ class Main extends Component {
 						</Grid>
 					</section>
 					<section className="section-tours">
+						{this.state.show ? <Popup showId={this.state.show}/> : null}
 						<div className="u-center-text u-margin-bottom--big">
 							<h2 className="heading-secondary" id="projects">Technical Projects</h2>
 						</div>
@@ -127,6 +145,7 @@ class Main extends Component {
 											"d3.js",
 											"Plaid API"
 										]}
+										handleShow={this.handleShow}
 									/>
 								</GridColumn>
 								<GridColumn size={4}>
@@ -141,6 +160,7 @@ class Main extends Component {
 											"Puppeteer.js",
 											"PostgreSQL"
 										]}
+										handleShow={this.handleShow}
 									/>
 								</GridColumn>
 								<GridColumn size={4}>
@@ -155,6 +175,7 @@ class Main extends Component {
 											"PostgreSQL",
 											"Stripe API"
 										]}
+										handleShow={this.handleShow}
 									/>
 								</GridColumn>
 							</GridRow>
@@ -169,8 +190,8 @@ class Main extends Component {
 											"HTML",
 											"CSS",
 											"Sass",
-
 										]}
+										handleShow={this.handleShow}
 									/>
 								</GridColumn>
 								<GridColumn size={4}>
@@ -184,6 +205,7 @@ class Main extends Component {
 											"Express",
 											"PostgreSQL"
 										]}
+										handleShow={this.handleShow}
 									/>
 								</GridColumn>
 								<GridColumn size={4}>
@@ -196,6 +218,7 @@ class Main extends Component {
 											"Cocktail DB API",
 											"Express"
 										]}
+										handleShow={this.handleShow}
 									/>
 								</GridColumn>
 							</GridRow>

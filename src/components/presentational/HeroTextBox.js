@@ -7,7 +7,7 @@ class HeroTextBox extends Component {
 		sub: PropTypes.string
 	};
 	static defaultProps = {
-		src: "/img/bailey-1.png",
+		src: "./img/bailey-1.png",
 	};
 	render() {
 		return (

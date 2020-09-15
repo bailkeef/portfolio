@@ -19,6 +19,13 @@
 
 	&__logo {
 		height: 5rem;
+
+		&--1 {
+			transform: translateY(0);
+		}
+		&--2 {
+			transform: translateY(5px);
+		}
 	}
 
 	&__text-box {

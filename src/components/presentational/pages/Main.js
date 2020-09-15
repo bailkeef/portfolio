@@ -14,7 +14,6 @@ const info = [
 		id: 1,
 		title: "Custom Finance App",
 		description: "Customizable financial web application with bank integration and data visualization",
-		img: "/mazuma-1.gif",
 		link: "https://github.com/TheRunawaysGIRLS/capstone"
 	},
 	{

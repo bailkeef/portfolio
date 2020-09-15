@@ -8,6 +8,49 @@ import Button from "../Button";
 import FeatureBox from "../FeatureBox";
 import ProjectFlipCard from "../ProjectFlipCard";
 import Popup from "../Popup";
+
+const info = [
+	{
+		id: 1,
+		title: "Custom Finance App",
+		description: "Customizable financial web application with bank integration and data visualization",
+		img: "/mazuma-1.gif",
+		link: "https://github.com/TheRunawaysGIRLS/capstone"
+	},
+	{
+		id: 2,
+		title: "Real Estate Lead Generator",
+		description: "Web scrapes for For-Sale-By-Owner leads' phone numbers for real estate agents and mass texts the messages",
+		link:"https://github.com/bailkeef/stackathon"
+	},
+	{
+		id: 3,
+		title: "Puzzle Party Store",
+		description: "E-commerce website for selling puzzles that allows for customer and store admin user experiences",
+		link: "https://github.com/PuzzleParty/PuzzleParty"
+	},
+	{
+		id: 4,
+		title: "Bailey Keefer Portfolio Site",
+		description: "Customizable financial web application with bank integration and data visualization",
+		link: "#"
+	},
+	{
+		id: 5,
+		title: "Deal Huntz",
+		description: "Allows real estate investors to connect and list and buy deals. Users are able to see reviews for investors to make sure they are trustworthy",
+		link:"https://github.com/bailkeef/dealhuntz"
+
+	},
+	{
+		id: 6,
+		title: "Cocktail Roulette",
+		description: "Utilizes Cocktail DB Public API to give user a random cocktail recipe",
+		link:"https://github.com/bailkeef/dealhuntz"
+	},
+
+]
+
 class Main extends Component {
 	constructor(){
 		super();
@@ -19,7 +62,6 @@ class Main extends Component {
 	}
 
 	handleShow(id){
-		console.log('inside of handleShow')
 		this.setState({show: id});
 		console.log(this.state)
 	}
@@ -131,12 +173,12 @@ class Main extends Component {
 						<div className="u-center-text u-margin-bottom--big">
 							<h2 className="heading-secondary" id="projects">Technical Projects</h2>
 						</div>
-						{this.state.show ? <Popup showId={this.state.show} handleClose={this.handleClose}/> :
+						{this.state.show ? <Popup showId={this.state.show} handleClose={this.handleClose} info={info}/> :
 						<Grid>
 							<GridRow>
 								<GridColumn size={4}>
 									<ProjectFlipCard
-										typeIndex="2"
+										typeIndex="1"
 										projectDescription="Customizable financial web application with bank integration and data visualization"
 										title="Custom Finance App"
 										description={[
@@ -151,7 +193,7 @@ class Main extends Component {
 								</GridColumn>
 								<GridColumn size={4}>
 									<ProjectFlipCard
-										typeIndex="1"
+										typeIndex="2"
 										projectDescription="Web scrapes for For-Sale-By-Owner leads' phone numbers for real estate agents and mass texts the messages"
 										title="RE Lead Generator"
 										description={[
@@ -216,7 +258,7 @@ class Main extends Component {
 								<GridColumn size={4}>
 									<ProjectFlipCard
 										typeIndex="6"
-										projectDescription="E-commerce website for selling puzzles that allows for customer and store admin user experiences"
+										projectDescription="Utilizes Cocktail DB Public API to give user a random cocktail recipe"
 										title="Cocktail Roulette"
 										description={[
 											"React | Redux",

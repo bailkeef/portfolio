@@ -1,3 +1,122 @@
 .popup {
-  width: 500px;
+	// Functionality
+  position: relative;
+  width: 100%;
+  height: 50rem;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  justify-content: center;
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: table;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all .4s .1s;
+  }
+  &__left {
+    width: 30%;
+    vertical-align: middle;
+    display: table-cell;
+    padding: 1rem 3rem;
+  }
+  &__right {
+    width: 70%;
+    display: table-cell;
+  }
+  &__close{
+    vertical-align: top;
+    width: 30px;
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+  }
+	// Front side styling
+	&__picture {
+		background-size: cover;
+		height: 50rem;
+    background-blend-mode: screen;
+		&--1 {
+			background-image:
+        url(/img/mazuma-1.gif);
+        background-repeat: no-repeat;
+        background-size: 100%;
+		}
+		&--2 {
+			background-image:
+        url(/img/not-available.gif);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+		}
+		&--3 {
+			background-image:
+        url(/img/puzzle-party.gif);
+        background-repeat: no-repeat;
+        background-size: 100%;
+		}
+		&--4 {
+			background-image:
+        url(/img/bailey-nicole-keefer.gif);
+        background-repeat: no-repeat;
+        background-size: 100%;
+		}
+		&--5 {
+			background-image:
+        url(/img/coming-soon.gif);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+		}
+		&--6 {
+			background-image:
+        url(/img/cocktails.gif);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+		}
+	}
+	&__header {
+		font-size: 2.8rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		text-align: right;
+		color: $color-white;
+		position: absolute;
+		top: 4rem;
+		right: 2rem;
+		width: 75%;
+	}
+	&__header-span {
+		padding: 1rem 1.5rem;
+		box-decoration-break: clone;
+	}
+	&__details {
+		& ul {
+			margin: 0 auto;
+			list-style: none;
+			width: 80%;
+			font-size: 1.6rem;
+			text-align: center;
+			& li {
+				padding: 1rem;
+				&:not(:last-child) {
+					border-bottom: 1px solid $color-grey-light-2;
+				}
+			}
+		}
+  }
 }
+
+
+

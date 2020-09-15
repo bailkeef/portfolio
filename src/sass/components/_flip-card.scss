@@ -44,11 +44,11 @@
 		clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 		&--1 {
 			background-image:
-				url(/img/home-1.jpg);
+				url(/img/money-1.jpeg);
 		}
 		&--2 {
 			background-image:
-				url(/img/money-1.jpeg);
+				url(/img/home-1.jpg);
 		}
 		&--3 {
 			background-image:
@@ -84,15 +84,16 @@
 		&--1 {
 			background-image: linear-gradient(
 				to right bottom,
-				rgba(red, 0.85),
-				rgba(darkred, 0.85)
+				rgba(lightgreen, 0.85),
+				rgba(green, 0.85)
 			);
 		}
 		&--2 {
 			background-image: linear-gradient(
 				to right bottom,
-				rgba(lightgreen, 0.85),
-				rgba(green, 0.85)
+				rgba(red, 0.85),
+				rgba(darkred, 0.85)
+
 			);
 		}
 		&--3 {

@@ -47,7 +47,7 @@ export default class ProjectFlipCard extends Component {
 							<div className="flip-card__price-box">
 								<p className="flip-card__price-value">{`${projectDescription}`}</p>
 							</div>
-							<button className="btn--animated btn--white" onClick={()=>this.props.handleShow(Number(this.props.typeIndex))}>Demo</button>
+							<button className="popup__button" onClick={()=>this.props.handleShow(Number(this.props.typeIndex))}>Demo</button>
 						</div>
 					</FlipCardBack>
 				</FlipCard>

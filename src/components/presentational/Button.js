@@ -15,7 +15,7 @@ class Button extends Component {
 			? `${className} ${getClass(variant, color)}`
 			: getClass(variant, color);
 		return (
-			<a href={href || "#"} className={classes}>
+			<a href={href || '#'} className={classes}>
 				{children}
 			</a>
 		);

@@ -15,7 +15,7 @@ export default class PopUp extends Component {
             </span>
             <Typography variant="h2" className="u-margin-bottom--small">{project.title}</Typography>
             <Typography variant="p" >{project.description}</Typography>
-            <Button className="btn--animated btn--green" variant="cool" color="white" animated popUpAnimation href={project.link}>View</Button>
+            <Button className="btn--green" variant="cool" color="white" animated popUpAnimation href={project.link}>View</Button>
           </div>
         <div className={`popup__right popup__picture popup__picture--${this.props.showId}`}></div>
       </div>

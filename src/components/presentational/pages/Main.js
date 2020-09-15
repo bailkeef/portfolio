@@ -104,17 +104,17 @@ class Main extends Component {
 								<GridColumn size={6}>
 									<div className="composition">
 										<img
-											src="/img/node-1.png"
+											src="./img/node-1.png"
 											className="composition__photo composition__photo--p1"
 											alt="Tour 1"
 										/>
 										<img
-											src="/img/react-1.png"
+											src="./img/react-1.png"
 											className="composition__photo composition__photo--p2"
 											alt="Tour 2"
 										/>
 										<img
-											src="/img/postgres-1.png"
+											src="./img/postgres-1.png"
 											className="composition__photo composition__photo--p3"
 											alt="Tour 3"
 										/>

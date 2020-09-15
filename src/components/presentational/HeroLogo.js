@@ -9,9 +9,9 @@ class HeroLogo extends Component {
 	static defaultProps = {
 		src: "/img/favicon.png",
 		linkedin: "https://www.linkedin.com/in/baileykeefer/",
-		linkedin_img: "/img/linkedin-white.png",
+		linkedin_img: "./img/linkedin-white.png",
 		github: "https://github.com/",
-		github_img: "/img/github-logo-white.png",
+		github_img: "./img/github-logo-white.png",
 
 	};
 	render() {

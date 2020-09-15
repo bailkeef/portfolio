@@ -91,13 +91,13 @@ class Main extends Component {
 										Professional Experience
 									</Typography>
 									<Typography variant="p">
-										I am an incoming Software Engineer at VMware. My background is in the Aerospace Engineering Industry with Lockheed Martin Space Systems. I received my Bachelor's in Mechanical Engineering at the University of Michigan and attended the Grace Hopper Program through Full Stack Acacademy in NYC.
+										I am an incoming Software Engineer at VMware. My background is in the Aerospace Industry with Lockheed Martin Space Systems. I received my Bachelor's in Mechanical Engineering at the University of Michigan and attended the Grace Hopper Program at Full Stack Acacademy in NYC.
 									</Typography>
 									<Typography variant="h3" className="u-margin-bottom--small">
-										Collaborative Team Member
+										Creative + Collaborative
 									</Typography>
 									<Typography variant="p">
-										I believe that efficient communication can accelerate progress on a project level and individual level. I love working on teams so I can learn from experiences of others and provide my own insight as well.
+										I love tackling complex problems and coming up with innovative solutions. I am a results-driven person and enjoy seeing my ideas come to life through code. I believe that effective communication is one of the most important skills to have in order to excel in any field. I love working on teams and collaborating with others to learn from their experiences and share my own.
 									</Typography>
 								</GridColumn>
 								<GridColumn size={5}>

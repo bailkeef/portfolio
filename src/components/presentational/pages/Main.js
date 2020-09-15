@@ -127,7 +127,7 @@ class Main extends Component {
 						<Grid>
 							<GridRow>
 								<GridColumn size={3}>
-									<FeatureBox title="FRONT END" iconName="basic-world">
+									<FeatureBox title="FRONT END" iconName="basic-webpage">
 										<ul>
 											<li>Redux</li>
 											<li>React</li>
@@ -137,7 +137,7 @@ class Main extends Component {
 									</FeatureBox>
 								</GridColumn>
 								<GridColumn size={3}>
-									<FeatureBox title="SERVER" iconName="basic-compass">
+									<FeatureBox title="SERVER" iconName="basic-share">
 										<ul>
 											<li>Node.js</li>
 											<li>Express</li>
@@ -145,7 +145,7 @@ class Main extends Component {
 									</FeatureBox>
 								</GridColumn>
 								<GridColumn size={3}>
-									<FeatureBox title="DATABASE" iconName="basic-map">
+									<FeatureBox title="DATABASE" iconName="basic-server2">
 										<ul>
 											<li>PostgreSQL</li>
 											<li>MySQL</li>
@@ -156,7 +156,7 @@ class Main extends Component {
 								<GridColumn size={3}>
 									<FeatureBox
 										title="OTHER"
-										iconName="basic-heart"
+										iconName="basic-cloud"
 									>
 										<ul>
 											<li>REST API</li>

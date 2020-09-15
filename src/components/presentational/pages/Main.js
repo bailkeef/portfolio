@@ -13,13 +13,13 @@ const info = [
 	{
 		id: 1,
 		title: "Custom Finance App",
-		description: "Customizable financial web application with bank integration and data visualization",
+		description: "Customizable financial web application with bank integration using Plaid API and data visualization using d3.js",
 		link: "https://github.com/TheRunawaysGIRLS/capstone"
 	},
 	{
 		id: 2,
 		title: "Real Estate Lead Generator",
-		description: "Web scrapes for For-Sale-By-Owner leads' phone numbers for real estate agents and mass texts the messages",
+		description: "Web scrapes for For-Sale-By-Owner leads' phone numbers for real estate agents using Puppeteer.js and mass texts them messages using Twilio",
 		link:"https://github.com/bailkeef/stackathon"
 	},
 	{

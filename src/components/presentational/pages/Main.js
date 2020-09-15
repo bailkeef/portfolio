@@ -31,7 +31,7 @@ const info = [
 	{
 		id: 4,
 		title: "Bailey Keefer Portfolio Site",
-		description: "Customizable financial web application with bank integration and data visualization",
+		description: "This is the site you are currently on! #Inception",
 		link: "#"
 	},
 	{
@@ -86,12 +86,12 @@ class Main extends Component {
 						</div>
 						<Grid>
 							<GridRow>
-								<GridColumn size={6}>
+								<GridColumn size={7}>
 									<Typography variant="h3" className="u-margin-bottom--small">
-										Creative Problem Solver
+										Professional Experience
 									</Typography>
 									<Typography variant="p">
-										With a background in Aerospace Engineering, I bring unique perspectives when coming up with solutions to complex problems.
+										I am an incoming Software Engineer at VMware. My background is in the Aerospace Engineering Industry with Lockheed Martin Space Systems. I received my Bachelor's in Mechanical Engineering at the University of Michigan and attended the Grace Hopper Program through Full Stack Acacademy in NYC.
 									</Typography>
 									<Typography variant="h3" className="u-margin-bottom--small">
 										Collaborative Team Member
@@ -100,7 +100,7 @@ class Main extends Component {
 										I believe that efficient communication can accelerate progress on a project level and individual level. I love working on teams so I can learn from experiences of others and provide my own insight as well.
 									</Typography>
 								</GridColumn>
-								<GridColumn size={6}>
+								<GridColumn size={5}>
 									<div className="composition">
 										<img
 											src="./img/node-1.png"

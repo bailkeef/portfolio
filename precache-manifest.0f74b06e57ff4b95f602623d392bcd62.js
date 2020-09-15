@@ -16,6 +16,10 @@ self.__precacheManifest = [
     "url": "/portfolio/static/js/runtime~main.ee2a1003.js"
   },
   {
+    "revision": "9ad4eb9cb51c735fc21b1f9116f528f7",
+    "url": "/portfolio/static/media/money-1.9ad4eb9c.jpeg"
+  },
+  {
     "revision": "4652bacc0a093e1b1fedf0dc2135d019",
     "url": "/portfolio/static/media/home-1.4652bacc.jpg"
   },
@@ -24,16 +28,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/puzzle-1.62ea26f4.jpeg"
   },
   {
-    "revision": "9ad4eb9cb51c735fc21b1f9116f528f7",
-    "url": "/portfolio/static/media/money-1.9ad4eb9c.jpeg"
+    "revision": "5639d45bb1b990408389df5fe4ac36db",
+    "url": "/portfolio/static/media/rei-1.5639d45b.jpg"
   },
   {
     "revision": "8ebfc8b87583968f76a84855eda9e1ad",
     "url": "/portfolio/static/media/code-1.8ebfc8b8.jpg"
-  },
-  {
-    "revision": "5639d45bb1b990408389df5fe4ac36db",
-    "url": "/portfolio/static/media/rei-1.5639d45b.jpg"
   },
   {
     "revision": "7587ee6a9bdde78271467b3ecb9a9dd0",
@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/bailey-nicole-keefer.39dd3c36.gif"
   },
   {
-    "revision": "8ef6bcbc56b5e922a19373ecae375912",
+    "revision": "9aec04c0defce2f48bf691fe480a9a30",
     "url": "/portfolio/index.html"
   }
 ];

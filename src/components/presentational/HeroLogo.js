@@ -18,10 +18,10 @@ class HeroLogo extends Component {
 		return (
 			<div className="hero__logo-box">
 				<a href={this.props.github}>
-					<img src={this.props.github_img} className="hero__logo hero__logo--2" alt="Logo" />
+					<img src={this.props.github_img} className="hero__logo hero__logo--2 btn--animated btn" alt="Logo" />
 				</a>
 				<a href={this.props.linkedin}>
-					<img src={this.props.linkedin_img} className="hero__logo hero__logo--1" alt="Logo" />
+					<img src={this.props.linkedin_img} className="hero__logo hero__logo--1 btn--animated btn" alt="Logo" />
 				</a>
 			</div>
 		);

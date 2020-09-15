@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "718f99acf635dffd20f2",
-    "url": "/portfolio/static/css/main.8283b3c2.chunk.css"
+    "revision": "25e6c8bcf177542a4fec",
+    "url": "/portfolio/static/css/main.e701ab1f.chunk.css"
   },
   {
-    "revision": "718f99acf635dffd20f2",
-    "url": "/portfolio/static/js/main.718f99ac.chunk.js"
+    "revision": "25e6c8bcf177542a4fec",
+    "url": "/portfolio/static/js/main.25e6c8bc.chunk.js"
   },
   {
     "revision": "7258aa498efb1b5b3320",
@@ -16,8 +16,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/js/runtime~main.ee2a1003.js"
   },
   {
-    "revision": "62ea26f40a9b6692affee3139bd7f007",
-    "url": "/portfolio/static/media/puzzle-1.62ea26f4.jpeg"
+    "revision": "5639d45bb1b990408389df5fe4ac36db",
+    "url": "/portfolio/static/media/rei-1.5639d45b.jpg"
   },
   {
     "revision": "8ebfc8b87583968f76a84855eda9e1ad",
@@ -28,19 +28,19 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/cocktails-1.7587ee6a.jpg"
   },
   {
-    "revision": "5639d45bb1b990408389df5fe4ac36db",
-    "url": "/portfolio/static/media/rei-1.5639d45b.jpg"
-  },
-  {
-    "revision": "9ad4eb9cb51c735fc21b1f9116f528f7",
-    "url": "/portfolio/static/media/money-1.9ad4eb9c.jpeg"
+    "revision": "62ea26f40a9b6692affee3139bd7f007",
+    "url": "/portfolio/static/media/puzzle-1.62ea26f4.jpeg"
   },
   {
     "revision": "4652bacc0a093e1b1fedf0dc2135d019",
     "url": "/portfolio/static/media/home-1.4652bacc.jpg"
   },
   {
-    "revision": "f8f7103518e53384326448a17e15036e",
+    "revision": "9ad4eb9cb51c735fc21b1f9116f528f7",
+    "url": "/portfolio/static/media/money-1.9ad4eb9c.jpeg"
+  },
+  {
+    "revision": "3d13d03a21abb07a2a0661b217c47350",
     "url": "/portfolio/index.html"
   }
 ];
